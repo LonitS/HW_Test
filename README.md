@@ -1,2 +1,2 @@
 # HW_Test
-Для запуска - Start.py
+Для запуска - start.py
