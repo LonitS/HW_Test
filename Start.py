@@ -1,43 +1,16 @@
-def add(n=0, m=0):
-    return n + m
+import os
 
-
-def subs(n=0, m=0):
-    return n - m
-
-
-def prod(n=0, m=0):
-    return n * m
-
-
-def div(n=1, m=0):
-    return n / m
-
-
-def rem(n=1, m=0):
-    return n % m
-
-
-def operations(op, n, m):
+br = 'y'
+print('Hillel 4')
+while br.lower() == 'y':
+    n = input('Номер задания (1,2,3):\t')
     try:
         n = int(n)
-        m = int(m)
+        if 0 < n < 4:
+            os.system(f'python 4_{n}.py')
+        else:
+            print('Некоректное число')
     except ValueError:
-        return "Ошибка!\n" \
-               "Введите числа корректно"
+        print('Некоректное число')
 
-    switch = {
-        '+': add(n, m),
-        '-': subs(n, m),
-        '*': prod(n, m),
-        '/': div(n, m),
-        '%': rem(n, m),
-    }
-    return switch.get(op, 'Ошибка!\nВведите оператор корректно: +,-,*,/,%')
-
-
-a = input('Первое число:\t')
-b = input('Второе число:\t')
-o = input('Введите один из операторов (+,-,*,/,%):\t')
-x = operations(o, a, b)
-print(f'{a} {o} {b} = {x}')
+    br = input('Хотите посмотреть следующее задание? \'y\'\t')
