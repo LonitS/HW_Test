@@ -20,7 +20,8 @@ def tr_c(high=5):
 def tr_d(high=5):
     tr_a(high)
     for i in reversed(range(high - 2)):
-        print(int((high - i - 1)) * ' ', '*', int((i * 2 + 1) / 2) * ' ', '*', int((i * 2 + 1) / 2) * ' ', '*', sep='')
+        print(int((high - i - 1)) * ' ', '*', int((i * 2 + 1) / 2) * ' ', '*',
+              int((i * 2 + 1) / 2) * ' ', '*', sep='')
     print(high * ' ', '*', sep='')
 
 
