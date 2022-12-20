@@ -10,11 +10,11 @@ def prod(n=0, m=0):
     return n * m
 
 
-def div(n=1, m=0):
+def div(n=1, m=1):
     return n / m
 
 
-def rem(n=1, m=0):
+def rem(n=1, m=1):
     return n % m
 
 
