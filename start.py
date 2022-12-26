@@ -7,10 +7,10 @@ while br.lower() == 'y':
     numb_2 = input('Номер задания (1,2,3):\t')
     try:
 
-        if 0 < int(numb_2) < 4 and 3 < int(numb_1) < 6:
+        # if 0 < int(numb_2) < 4 and 3 < int(numb_1) < 6:
             os.system(f'python {numb_1}_{numb_2}.py')
-        else:
-            print('Некоректный номер')
+        # else:
+        #     print('Некоректный номер')
     except ValueError:
         print('Некоректное число')
 

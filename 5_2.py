@@ -1,6 +1,6 @@
 def tr_a(high=5):
     for i in range(high):
-        print(int((high - i)) * ' ', (i * 2 + 1) * '*', sep='')
+        print(int((high - i)) * '  ', (i * 2 + 1) * ' *', sep='')
 
 
 def tr_b(high=5):
