@@ -2,6 +2,7 @@ import random
 
 
 def prh(ls):
+    print('Задание №6_1 \'Print Больше 100\'')
     print('print_100 = ', end='')
     for i in ls:
         if i > 100:
@@ -10,6 +11,7 @@ def prh(ls):
 
 
 def lsh(ls):
+    print('Задание №6_2 \'Добавить Больше 100\'')
     print('list_100 = ', end='')
     result_list = []
     for i in ls:
@@ -19,6 +21,7 @@ def lsh(ls):
 
 
 def lss(ls):
+    print('Задание №6_3 \'Добавить 0 либо сумму\'')
     print('list if 2 = ', end='')
     ls_copy = ls.copy()
     len_ls = len(ls_copy)
@@ -30,6 +33,7 @@ def lss(ls):
 
 
 def ls_pop(ls):
+    print('Задание №6_4 \'Удалите из списка элемент с индексом k\'')
     print(f'my_list = {ls}')
     index = int(input('Введите индекс: '))
     print(f'index for del = {ls[index]}')
@@ -40,6 +44,7 @@ def ls_pop(ls):
 
 
 def ls_append(ls):
+    print('Задание №6_5 \'Вставить в список на позицию с индексом k\'')
     print(f'my_list = {ls}')
     index = int(input('Введите индекс: '))
     value = int(input('Введите Значение: '))
@@ -51,6 +56,7 @@ def ls_append(ls):
 
 
 def ls_uniq(ls):
+    print('Задание №6_6 \'Сколько уникальных чисел содержится\'')
     ls_s = random.sample(range(1, 200), 15)
     print(f'my_list = {ls}\n len = {len(ls)}')
     print(f'my_list_2 = {ls_s}\n len = {len(ls_s)}')
@@ -58,7 +64,7 @@ def ls_uniq(ls):
     print('uniq = ', len(dict(zip(ls, [ls.count(i) for i in ls]))))
 
 
-print('Задание №6_1 \'Списки\'')
+print('Задание №6 \'Списки\'')
 my_list = random.sample(range(1, 200), 15)
 print(f'my_list = {my_list}\n')
 prh(my_list)
