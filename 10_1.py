@@ -66,7 +66,7 @@ def main():
     print(f'Input list 1: {my_list}')
     print(f'Input list 2: {d_list}')
     print(f'Input string 1: {my_string}')
-    print(f'Input string 1: {my_string_2}')
+    print(f'Input string 2: {my_string_2}')
 
     result_list = rev_list(my_list)
     print(f'Result 1 Func: {result_list}')
